@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
         fontFamily: 'Feather-Bold',
         textTheme: TextTheme(
           titleLarge: TextStyle(fontSize: 16, color: Colors.green),
-          titleMedium: TextStyle(fontSize: 14, color: Colors.green),
+          titleMedium: const TextStyle(fontSize: 14, color: Colors.green),
         ),
       ),
       home: const SplashScreen(),
