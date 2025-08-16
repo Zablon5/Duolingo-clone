@@ -1,7 +1,10 @@
+import 'package:duolingo_clone/features/splash/ui/screens/splash_screen.dart';
+
 import 'package:flutter/material.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(DevicePreview(builder: (context) => const MainApp()));
 }
 
 class MainApp extends StatelessWidget {
@@ -9,8 +12,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello Duolingo'))),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Feather-Bold',
+        textTheme: TextTheme(
+          titleLarge: TextStyle(fontSize: 16, color: Colors.green),
+          titleMedium: const TextStyle(fontSize: 14, color: Colors.green),
+        ),
+      ),
+      home: const SplashScreen(),
     );
   }
 }
