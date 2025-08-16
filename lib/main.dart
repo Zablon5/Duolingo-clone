@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
           titleMedium: TextStyle(fontSize: 14, color: Colors.green),
         ),
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
