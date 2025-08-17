@@ -61,7 +61,7 @@ class GetStartedPage extends StatelessWidget {
                 backgroundColor: AppColors.darkBlue,
                 child: Text(
                   'I ALREADY HAVE AN ACCOUNT',
-                  style: TextStyle(color: AppColors.secondaryGreen),
+                  style: const TextStyle(color: AppColors.secondaryGreen),
                 ),
               ),
             ),
