@@ -15,7 +15,7 @@ class GetStartedPage extends StatelessWidget {
           children: [
             SizedBox(height: MediaQuery.of(context).size.height * 0.3),
             Container(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Text(
                 'Duolingo Icon Animation Placeholder',
                 style: TextStyle(color: AppColors.light),
