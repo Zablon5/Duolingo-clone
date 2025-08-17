@@ -46,7 +46,7 @@ class GetStartedPage extends StatelessWidget {
                 width: double.infinity,
                 child: Text(
                   'GET STARTED',
-                  style: TextStyle(color: AppColors.darkBlue),
+                  style: const TextStyle(color: AppColors.darkBlue),
                 ),
               ),
             ),
